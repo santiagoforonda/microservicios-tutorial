@@ -80,7 +80,7 @@ public class UsuarioController {
     }
 
 
-    @PostMapping("/carro/{usuarioId}")
+    @PostMapping("/moto/{usuarioId}")
     public ResponseEntity<Moto> guardarMoto(@PathVariable("usuarioId") int usuarioId, @RequestBody Moto moto){
         Moto nuevaMoto = usuarioService.saveMoto(usuarioId, moto);
         return ResponseEntity.ok(nuevaMoto);
