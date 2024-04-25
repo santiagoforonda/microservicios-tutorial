@@ -5,9 +5,8 @@ spring:
     config:
       server:
         git:
-          default-label: multiple-instancias
+          default-label: gateway
           uri: https://github.com/santiagoforonda/microservicios-tutorial
           search-paths: config-data
   application:
     name: config-server
-
