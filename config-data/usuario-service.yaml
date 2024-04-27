@@ -8,7 +8,6 @@ eureka:
       deafult-zone: http://localhost:8761/eureka
     instance:
       instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
 resilence4j.circuitbreaker:
   instance:
     carrosCB:
@@ -38,3 +37,6 @@ resilence4j.circuitbreaker:
       waitDurationInOpenState: 5s
       failureRateThreshold: 50
       eventConsumerBufferSize: 10
+spring:
+  application:
+    zipkin: http://localhost:9411
